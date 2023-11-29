@@ -1,0 +1,64 @@
+[
+    {
+        "id": 173854,
+        "reschedule": {
+            "id": 173854,
+            "date": "Sept. 21, 2020",
+            "requestee": {
+                "name": "Katrina Louise D. Santos",
+                "slug": "/rescheduling/173854/"
+            },
+            "category": "Individual",
+            "tags": [
+                "scholar"
+            ],
+            "status": "Approved"
+        }
+    },
+    {
+        "id": 173855,
+        "reschedule": {
+            "id": 173855,
+            "date": "Sept. 21, 2020",
+            "requestee": {
+                "name": "Katrina Louise D. Santos",
+                "slug": "/rescheduling/173855/"
+            },
+            "category": "Individual",
+            "tags": [
+                "accredited"
+            ],
+            "status": "Pending"
+        }
+    },
+    {
+        "id": 173856,
+        "reschedule": {
+            "id": 173856,
+            "date": "Sept. 21, 2020",
+            "requestee": {
+                "name": "Katrina Louise D. Santos",
+                "slug": "/rescheduling/173856/"
+            },
+            "category": "Individual",
+            "tags": [],
+            "status": "Declined"
+        }
+    },
+    {
+        "id": 173857,
+        "reschedule": {
+            "id": "173857",
+            "date": "Sept. 21, 2020",
+            "requestee": {
+                "name": "Block X4",
+                "slug": "/rescheduling/173857/"
+            },
+            "category": "Group",
+            "tags": [
+                "accredited"
+            ],
+            "status": "PENDING"
+        }
+    }
+]

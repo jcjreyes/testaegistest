@@ -1,0 +1,68 @@
+[
+    {
+        "model": "accounts.academicinformation", 
+        "pk": 1, 
+        "fields": {
+            "user": 1, 
+            "school": "SOM", 
+            "year_level": "4", 
+            "primary_course": "BS ITE", 
+            "secondary_course": ""
+        }
+    },
+    {
+        "model": "accounts.academicinformation", 
+        "pk": 2, 
+        "fields": {
+            "user": 2, 
+            "school": "SOM", 
+            "year_level": "4", 
+            "primary_course": "BS ME", 
+            "secondary_course": ""
+        }
+    },
+    {
+        "model": "accounts.academicinformation", 
+        "pk": 3, 
+        "fields": {
+            "user": 3, 
+            "school": "SOSE", 
+            "year_level": "4", 
+            "primary_course": "BS CS", 
+            "secondary_course": ""
+        }
+    },
+    {
+        "model": "accounts.academicinformation", 
+        "pk": 4, 
+        "fields": {
+            "user": 4, 
+            "school": "SOSE", 
+            "year_level": "4", 
+            "primary_course": "BS PSY", 
+            "secondary_course": ""
+        }
+    },
+    {
+        "model": "accounts.academicinformation", 
+        "pk": 5, 
+        "fields": {
+            "user": 5, 
+            "school": "SOH", 
+            "year_level": "4", 
+            "primary_course": "BFA ID", 
+            "secondary_course": ""
+        }
+    },
+    {
+        "model": "accounts.academicinformation", 
+        "pk": 6, 
+        "fields": {
+            "user": 6, 
+            "school": "SOSS", 
+            "year_level": "4", 
+            "primary_course": "AB POS", 
+            "secondary_course": ""
+        }
+    }
+]

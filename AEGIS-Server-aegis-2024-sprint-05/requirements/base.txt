@@ -1,0 +1,24 @@
+Django==3.0.6
+django-allauth==0.42.0
+djangorestframework==3.11.0
+dj-rest-auth==1.0.5
+django-extensions==2.2.9
+django-model-utils==4.0.0
+shortuuid==1.0.1
+#psycopg2==2.7.7 --no-binary psycopg2
+#psycopg2-binary==2.8.6
+PyJWT==1.7.1
+djangorestframework_simplejwt==4.5.0
+#djangorestframework-simplejwt==4.3.0
+coverage==5.1
+django-environ==0.4.5
+django-cors-headers==3.4.0
+django-sendgrid-v5==0.8.1
+draftjs-exporter==4.1.0
+xhtml2pdf==0.2.4
+django-tinymce==3.0.2
+XlsxWriter==1.3.5
+beautifulsoup4==4.9.1
+lxml==4.6.1
+django-markdown-deux==1.0.5
+whitenoise==5.2.0

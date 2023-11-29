@@ -1,0 +1,12 @@
+.blue, time {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 0.2rem;
+    color: #001196;
+}
+
+h1, p {
+    margin: 0 !important;
+}

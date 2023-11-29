@@ -1,0 +1,152 @@
+[
+    {
+      "model": "photoshoot.groupphotoshoot",
+      "pk": 1,
+      "fields": {
+        "photoshoot": 41,
+        "name": "MEAMore",
+        "group_type": "COA",
+        "subgroup": "MEA",
+        "size": 16,
+        "emergency_contact_name": "Joshua P. Taningco",
+        "emergency_contact_number": "+639166558865",
+        "emergency_contact_email": "joshua.taningco@obf.ateneo.edu",
+        "is_accredited": true
+      }
+    },
+    {
+      "model": "photoshoot.groupphotoshoot",
+      "pk": 2,
+      "fields": {
+        "photoshoot": 42,
+        "name": "AJMA Strong",
+        "group_type": "COA",
+        "subgroup": "AJMA",
+        "size": 20,
+        "emergency_contact_name": "Joshua P. Taningco",
+        "emergency_contact_number": "+639166558865",
+        "emergency_contact_email": "joshua.taningco@obf.ateneo.edu",
+        "is_accredited": true
+      }
+    },
+    {
+      "model": "photoshoot.groupphotoshoot",
+      "pk": 3,
+      "fields": {
+        "photoshoot": 43,
+        "name": "Kythe Fam",
+        "group_type": "COA",
+        "subgroup": "Kythe",
+        "size": 12,
+        "emergency_contact_name": "Joshua P. Taningco",
+        "emergency_contact_number": "+639166558865",
+        "emergency_contact_email": "joshua.taningco@obf.ateneo.edu",
+        "is_accredited": false
+      }
+    },
+    {
+      "model": "photoshoot.groupphotoshoot",
+      "pk": 4,
+      "fields": {
+        "photoshoot": 44,
+        "name": "CODErs",
+        "group_type": "COA",
+        "subgroup": "Ateneo CODE",
+        "size": 24,
+        "emergency_contact_name": "Joshua P. Taningco",
+        "emergency_contact_number": "+639166558865",
+        "emergency_contact_email": "joshua.taningco@obf.ateneo.edu",
+        "is_accredited": false
+      }
+    },
+    {
+      "model": "photoshoot.groupphotoshoot",
+      "pk": 5,
+      "fields": {
+        "photoshoot": 45,
+        "name": "CompSAt EB",
+        "group_type": "COA",
+        "subgroup": "CompSAt",
+        "size": 12,
+        "emergency_contact_name": "Joshua P. Taningco",
+        "emergency_contact_number": "+639166558865",
+        "emergency_contact_email": "joshua.taningco@obf.ateneo.edu",
+        "is_accredited": true
+      }
+    },
+    {
+      "model": "photoshoot.groupphotoshoot",
+      "pk": 6,
+      "fields": {
+        "photoshoot": 46,
+        "name": "UXSoc Mafia",
+        "group_type": "LIONS",
+        "subgroup": "UX Society",
+        "size": 12,
+        "emergency_contact_name": "Joshua P. Taningco",
+        "emergency_contact_number": "+639166558865",
+        "emergency_contact_email": "joshua.taningco@obf.ateneo.edu",
+        "is_accredited": false
+      }
+    },
+    {
+      "model": "photoshoot.groupphotoshoot",
+      "pk": 7,
+      "fields": {
+        "photoshoot": 47,
+        "name": "BYTE EBCB",
+        "group_type": "LIONS",
+        "subgroup": "BYTE",
+        "size": 16,
+        "emergency_contact_name": "Joshua P. Taningco",
+        "emergency_contact_number": "+639166558865",
+        "emergency_contact_email": "joshua.taningco@obf.ateneo.edu",
+        "is_accredited": false
+      }
+    },
+    {
+      "model": "photoshoot.groupphotoshoot",
+      "pk": 8,
+      "fields": {
+        "photoshoot": 48,
+        "name": "DSC Tech",
+        "group_type": "LIONS",
+        "subgroup": "DSC Loyola",
+        "size": 16,
+        "emergency_contact_name": "Joshua P. Taningco",
+        "emergency_contact_number": "+639166558865",
+        "emergency_contact_email": "joshua.taningco@obf.ateneo.edu",
+        "is_accredited": false
+      }
+    },
+    {
+      "model": "photoshoot.groupphotoshoot",
+      "pk": 9,
+      "fields": {
+        "photoshoot": 49,
+        "name": "JFEL Stonks",
+        "group_type": "LIONS",
+        "subgroup": "JFEL",
+        "size": 12,
+        "emergency_contact_name": "Joshua P. Taningco",
+        "emergency_contact_number": "+639166558865",
+        "emergency_contact_email": "joshua.taningco@obf.ateneo.edu",
+        "is_accredited": false
+      }
+    },
+    {
+      "model": "photoshoot.groupphotoshoot",
+      "pk": 10,
+      "fields": {
+        "photoshoot": 50,
+        "name": "BBI",
+        "group_type": "LIONS",
+        "subgroup": "Blue Bird Improv",
+        "size": 16,
+        "emergency_contact_name": "Joshua P. Taningco",
+        "emergency_contact_number": "+639166558865",
+        "emergency_contact_email": "joshua.taningco@obf.ateneo.edu",
+        "is_accredited": false
+      }
+    }
+]    

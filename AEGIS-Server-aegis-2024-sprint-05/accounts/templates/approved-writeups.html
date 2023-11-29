@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @page {
+        size: A4;
+        margin: 1in;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+        font-size: 16px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .student {
+        page-break-after: always;
+      }
+
+      .student-details {
+        font-size: 1.5rem;
+        margin-bottom: 32px;
+      }
+
+      .id-number {
+        font-size: 0.6em;
+      }
+
+      .writeup > * {
+        margin: 0;
+        padding: 0;
+      }
+      .line-break {
+        background-color: #e3e3e3;
+        color: #e3e3e3;
+        width: 100%;
+        margin: 6px !important;
+      }
+
+      .full-name {
+        display: inline-block;
+        margin-right: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Approved Student Writeups</h1>
+
+    {% if students|length == 0 %}
+    <p>No data</p>
+    {% else %} {% for student in students%}
+    <div class="student" id="{{ student.id_number|slugify }}">
+      <div class="student-details">
+        <span class="full-name">{{ student.full_name }}</span>
+        <span class="id-number">{{ student.id_number }}</span>
+      </div>
+      <div class="writeup">
+        {{ student.writeup | safe}}
+      </div>
+    </div>
+    {% endfor %} {% endif %}
+  </body>
+</html>

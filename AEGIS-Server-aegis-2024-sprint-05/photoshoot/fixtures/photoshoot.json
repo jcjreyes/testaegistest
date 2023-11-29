@@ -1,0 +1,702 @@
+[
+    {
+      "model": "photoshoot.photoshoot",
+      "pk": 1,
+      "fields": {
+        "reference_id": "PE21-G-0001",
+        "user": 1,
+        "photoshoot_type": "Individual",
+        "photoshoot_datetime": 3,
+        "is_rescheduling": false,
+        "is_late": false,
+        "is_retaking": false,
+        "attended": false
+      }
+    },
+    {
+      "model": "photoshoot.photoshoot",
+      "pk": 2,
+      "fields": {
+        "reference_id": "PE21-G-0002",
+        "user": 1,
+        "photoshoot_type": "Individual",
+        "photoshoot_datetime": 3,
+        "is_rescheduling": true,
+        "is_late": false,
+        "is_retaking": false,
+        "attended": false
+      }
+    },
+    {
+      "model": "photoshoot.photoshoot",
+      "pk": 3,
+      "fields": {
+        "reference_id": "PE21-G-0003",
+        "user": 1,
+        "photoshoot_type": "Individual",
+        "photoshoot_datetime": 15,
+        "is_rescheduling": false,
+        "is_late": false,
+        "is_retaking": false,
+        "attended": false
+      }
+    },
+    {
+      "model": "photoshoot.photoshoot",
+      "pk": 4,
+      "fields": {
+        "reference_id": "PE21-G-0004",
+        "user": 1,
+        "photoshoot_type": "Individual",
+        "photoshoot_datetime": 15,
+        "is_rescheduling": false,
+        "is_late": false,
+        "is_retaking": false,
+        "attended": false
+      }
+    },
+    {
+      "model": "photoshoot.photoshoot",
+      "pk": 5,
+      "fields": {
+        "reference_id": "PE21-G-0005",
+        "user": 1,
+        "photoshoot_type": "Individual",
+        "photoshoot_datetime": 5,
+        "is_rescheduling": false,
+        "is_late": false,
+        "is_retaking": false,
+        "attended": false
+      }
+    },
+    {
+      "model": "photoshoot.photoshoot",
+      "pk": 6,
+      "fields": {
+        "reference_id": "PE21-G-0006",
+        "user": 1,
+        "photoshoot_type": "Individual",
+        "photoshoot_datetime": 5,
+        "is_rescheduling": false,
+        "is_late": false,
+        "is_retaking": false,
+        "attended": false
+      }
+    },
+    {
+      "model": "photoshoot.photoshoot",
+      "pk": 7,
+      "fields": {
+        "reference_id": "PE21-G-0007",
+        "user": 1,
+        "photoshoot_type": "Individual",
+        "photoshoot_datetime": 17,
+        "is_rescheduling": false,
+        "is_late": false,
+        "is_retaking": false,
+        "attended": false
+      }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 8,
+        "fields": {
+          "reference_id": "PE21-G-0008",
+          "user": 2,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 3,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 9,
+        "fields": {
+          "reference_id": "PE21-G-0009",
+          "user": 2,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 3,
+          "is_rescheduling": true,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 10,
+        "fields": {
+          "reference_id": "PE21-G-0010",
+          "user": 2,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 15,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 11,
+        "fields": {
+          "reference_id": "PE21-G-0011",
+          "user": 2,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 15,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 12,
+        "fields": {
+          "reference_id": "PE21-G-0012",
+          "user": 2,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 5,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 13,
+        "fields": {
+          "reference_id": "PE21-G-0013",
+          "user": 2,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 17,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 14,
+        "fields": {
+          "reference_id": "PE21-G-0014",
+          "user": 2,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 5,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 15,
+        "fields": {
+          "reference_id": "PE21-G-0015",
+          "user": 3,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 6,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 16,
+        "fields": {
+          "reference_id": "PE21-G-0016",
+          "user": 3,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 6,
+          "is_rescheduling": true,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 17,
+        "fields": {
+          "reference_id": "PE21-G-0017",
+          "user": 3,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 18,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 18,
+        "fields": {
+          "reference_id": "PE21-G-0018",
+          "user": 3,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 18,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 19,
+        "fields": {
+          "reference_id": "PE21-G-0019",
+          "user": 3,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 8,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 20,
+        "fields": {
+          "reference_id": "PE21-G-0020",
+          "user": 3,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 8,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 21,
+        "fields": {
+          "reference_id": "PE21-G-0021",
+          "user": 3,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 20,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 22,
+        "fields": {
+          "reference_id": "PE21-G-0022",
+          "user": 4,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 6,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 23,
+        "fields": {
+          "reference_id": "PE21-G-0023",
+          "user": 4,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 6,
+          "is_rescheduling": true,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 24,
+        "fields": {
+          "reference_id": "PE21-G-0024",
+          "user": 4,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 18,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 25,
+        "fields": {
+          "reference_id": "PE21-G-0025",
+          "user": 4,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 18,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 26,
+        "fields": {
+          "reference_id": "PE21-G-0026",
+          "user": 4,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 8,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 27,
+        "fields": {
+          "reference_id": "PE21-G-0027",
+          "user": 4,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 8,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 28,
+        "fields": {
+          "reference_id": "PE21-G-0028",
+          "user": 4,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 20,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 29,
+        "fields": {
+          "reference_id": "PE21-G-0029",
+          "user": 5,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 9,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 30,
+        "fields": {
+          "reference_id": "PE21-G-0030",
+          "user": 5,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 9,
+          "is_rescheduling": true,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 31,
+        "fields": {
+          "reference_id": "PE21-G-0031",
+          "user": 5,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 21,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 32,
+        "fields": {
+          "reference_id": "PE21-G-0032",
+          "user": 5,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 11,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 33,
+        "fields": {
+          "reference_id": "PE21-G-0033",
+          "user": 5,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 11,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 34,
+        "fields": {
+          "reference_id": "PE21-G-0034",
+          "user": 5,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 23,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 35,
+        "fields": {
+          "reference_id": "PE21-G-0035",
+          "user": 6,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 12,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 36,
+        "fields": {
+          "reference_id": "PE21-G-0036",
+          "user": 6,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 12,
+          "is_rescheduling": true,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 37,
+        "fields": {
+          "reference_id": "PE21-G-0037",
+          "user": 6,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 24,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 38,
+        "fields": {
+          "reference_id": "PE21-G-0038",
+          "user": 6,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 14,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 39,
+        "fields": {
+          "reference_id": "PE21-G-0039",
+          "user": 6,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 14,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 40,
+        "fields": {
+          "reference_id": "PE21-G-0040",
+          "user": 6,
+          "photoshoot_type": "Individual",
+          "photoshoot_datetime": 26,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 41,
+        "fields": {
+          "reference_id": "PE21-G-0041",
+          "user": 1,
+          "photoshoot_type": "Group",
+          "photoshoot_datetime": 4,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 42,
+        "fields": {
+          "reference_id": "PE21-G-0042",
+          "user": 1,
+          "photoshoot_type": "Group",
+          "photoshoot_datetime": 7,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 43,
+        "fields": {
+          "reference_id": "PE21-G-0043",
+          "user": 1,
+          "photoshoot_type": "Group",
+          "photoshoot_datetime": 4,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 44,
+        "fields": {
+          "reference_id": "PE21-G-0044",
+          "user": 1,
+          "photoshoot_type": "Group",
+          "photoshoot_datetime": 19,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 45,
+        "fields": {
+          "reference_id": "PE21-G-0045",
+          "user": 1,
+          "photoshoot_type": "Group",
+          "photoshoot_datetime": 4,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 46,
+        "fields": {
+          "reference_id": "PE21-G-0046",
+          "user": 1,
+          "photoshoot_type": "Group",
+          "photoshoot_datetime": 16,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 47,
+        "fields": {
+          "reference_id": "PE21-G-0047",
+          "user": 1,
+          "photoshoot_type": "Group",
+          "photoshoot_datetime": 16,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 48,
+        "fields": {
+          "reference_id": "PE21-G-0048",
+          "user": 1,
+          "photoshoot_type": "Group",
+          "photoshoot_datetime": 10,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 49,
+        "fields": {
+          "reference_id": "PE21-G-0049",
+          "user": 1,
+          "photoshoot_type": "Group",
+          "photoshoot_datetime": 16,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    },
+    {
+        "model": "photoshoot.photoshoot",
+        "pk": 50,
+        "fields": {
+          "reference_id": "PE21-G-0050",
+          "user": 1,
+          "photoshoot_type": "Group",
+          "photoshoot_datetime": 10,
+          "is_rescheduling": false,
+          "is_late": false,
+          "is_retaking": false,
+          "attended": false
+        }
+    }
+]    

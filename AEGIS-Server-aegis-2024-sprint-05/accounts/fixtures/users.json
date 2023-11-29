@@ -1,0 +1,122 @@
+[
+    {
+        "model": "accounts.user", 
+        "pk": 1, 
+        "fields": {
+            "password": "pbkdf2_sha256$180000$EtmPTJOqqfZ9$DOenFzu8mT18bJTGAipqVP6p/tuhYoItHviOhotLWr4=", 
+            "last_login": "2021-05-19T02:10:00Z", 
+            "is_superuser": true, 
+            "last_name": "Taningco", 
+            "email": "joshua.taningco@obf.ateneo.edu", 
+            "is_staff": true, 
+            "is_active": true, 
+            "date_joined": "2021-05-03T06:00:00Z", 
+            "username": "164864", 
+            "first_name": "Joshua", 
+            "middle_initial": "P", 
+            "mobile_number": "09166558865", 
+            "groups": [], 
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "accounts.user", 
+        "pk": 2, 
+        "fields": {
+            "password": "pbkdf2_sha256$180000$2NwjqeefdpKX$C7U4Dp/wOdw13nDkJaHbkU666t6CQwFd9SRTjnEKILY=", 
+            "last_login": "2021-05-19T02:10:00Z", 
+            "is_superuser": true, 
+            "last_name": "Sison", 
+            "email": "harvey.sison@obf.ateneo.edu", 
+            "is_staff": true, 
+            "is_active": true, 
+            "date_joined": "2021-05-03T06:00:00Z", 
+            "username": "164865", 
+            "first_name": "Harvey Jay", 
+            "middle_initial": "M", 
+            "mobile_number": "09166558865", 
+            "groups": [], 
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "accounts.user", 
+        "pk": 3, 
+        "fields": {
+            "password": "pbkdf2_sha256$180000$EtmPTJOqqfZ9$DOenFzu8mT18bJTGAipqVP6p/tuhYoItHviOhotLWr4=", 
+            "last_login": "2021-05-19T02:10:00Z", 
+            "is_superuser": true, 
+            "last_name": "Del Rio", 
+            "email": "daniel.delrio@obf.ateneo.edu", 
+            "is_staff": true, 
+            "is_active": true, 
+            "date_joined": "2021-05-03T06:00:00Z", 
+            "username": "164866", 
+            "first_name": "Daniel", 
+            "middle_initial": "", 
+            "mobile_number": "09166558865", 
+            "groups": [], 
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "accounts.user", 
+        "pk": 4, 
+        "fields": {
+            "password": "pbkdf2_sha256$180000$EtmPTJOqqfZ9$DOenFzu8mT18bJTGAipqVP6p/tuhYoItHviOhotLWr4=", 
+            "last_login": "2021-05-19T02:10:00Z", 
+            "is_superuser": true, 
+            "last_name": "Gan", 
+            "email": "brian.gan@obf.ateneo.edu", 
+            "is_staff": true, 
+            "is_active": true, 
+            "date_joined": "2021-05-03T06:00:00Z", 
+            "username": "164867", 
+            "first_name": "Brian", 
+            "middle_initial": "", 
+            "mobile_number": "09166558865", 
+            "groups": [], 
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "accounts.user", 
+        "pk": 5, 
+        "fields": {
+            "password": "pbkdf2_sha256$180000$EtmPTJOqqfZ9$DOenFzu8mT18bJTGAipqVP6p/tuhYoItHviOhotLWr4=", 
+            "last_login": "2021-05-19T02:10:00Z", 
+            "is_superuser": true, 
+            "last_name": "Lagamayo", 
+            "email": "lance.lagamayo@obf.ateneo.edu", 
+            "is_staff": true, 
+            "is_active": true, 
+            "date_joined": "2021-05-03T06:00:00Z", 
+            "username": "164868", 
+            "first_name": "Lance", 
+            "middle_initial": "", 
+            "mobile_number": "09166558865", 
+            "groups": [], 
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "accounts.user", 
+        "pk": 6, 
+        "fields": {
+            "password": "pbkdf2_sha256$180000$EtmPTJOqqfZ9$DOenFzu8mT18bJTGAipqVP6p/tuhYoItHviOhotLWr4=", 
+            "last_login": "2021-05-19T02:10:00Z", 
+            "is_superuser": true, 
+            "last_name": "Taningco", 
+            "email": "matthew.taningco@obf.ateneo.edu", 
+            "is_staff": true, 
+            "is_active": true, 
+            "date_joined": "2021-05-03T06:00:00Z", 
+            "username": "164869", 
+            "first_name": "Matthew", 
+            "middle_initial": "P", 
+            "mobile_number": "09166558865", 
+            "groups": [], 
+            "user_permissions": []
+        }
+    }
+]

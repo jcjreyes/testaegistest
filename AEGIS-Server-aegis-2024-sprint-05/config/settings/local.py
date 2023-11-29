@@ -1,0 +1,63 @@
+import environ
+import os
+from .base import *
+
+env = environ.Env()
+env.read_env()
+
+
+SECRET_KEY = env("SECRET_KEY")
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": env("DB_NAME"),
+        "USER": env("DB_USER"),
+        "PASSWORD": env("DB_PW"),
+        "HOST": env("DB_HOST"),
+        "PORT": env("DB_PORT"),
+    }
+}
+
+SENDGRID_API_KEY = env("SENDGRID_API_KEY")
+# CHANGE
+DEFAULT_FROM_EMAIL = env("FROM_EMAIL")
+
+CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ORIGIN_WHITELIST = ["http://localhost:3000", "http://localhost:3001", "https://aegis-backend.netlify.app"]
+CORS_ALLOW_CREDENTIALS = True
+
+
+ACCOUNT_ADAPTER = "accounts.adapter.DefaultAccountAdapterCustom"
+URL_FRONT = "http://localhost:3000/"
+
+DEBUG_TOOLBAR = True
+
+if DEBUG_TOOLBAR:
+    # Add django extensions
+    INSTALLED_APPS += ["debug_toolbar"]
+    MIDDLEWARE = ["debug_toolbar.middleware.DebugToolbarMiddleware"] + MIDDLEWARE
+
+    # Configure django-debug-toolbar
+    DEBUG_TOOLBAR_PANELS = [
+        "ddt_request_history.panels.request_history.RequestHistoryPanel",
+        "debug_toolbar.panels.versions.VersionsPanel",
+        "debug_toolbar.panels.timer.TimerPanel",
+        "debug_toolbar.panels.settings.SettingsPanel",
+        "debug_toolbar.panels.headers.HeadersPanel",
+        "debug_toolbar.panels.request.RequestPanel",
+        "debug_toolbar.panels.sql.SQLPanel",
+        "debug_toolbar.panels.templates.TemplatesPanel",
+        "debug_toolbar.panels.staticfiles.StaticFilesPanel",
+        "debug_toolbar.panels.cache.CachePanel",
+        "debug_toolbar.panels.signals.SignalsPanel",
+        "debug_toolbar.panels.logging.LoggingPanel",
+        "debug_toolbar.panels.redirects.RedirectsPanel",
+        "debug_toolbar.panels.profiling.ProfilingPanel",
+    ]
+
+    # Needed for django-debug-toolbar
+    INTERNAL_IPS = [
+        "127.0.0.1",
+        "localhost",
+    ]

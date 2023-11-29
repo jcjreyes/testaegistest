@@ -1,0 +1,368 @@
+import React, { useMemo, useState } from "react";
+import styled from "styled-components";
+
+import Header from "../../components/Header";
+import Filter from "../../components/Filter";
+import Table from "../../components/Table";
+import TableStatus from "../../components/Status";
+import Spinner from "../../components/Spinner";
+
+import { format, parseISO } from "date-fns";
+import { useQuery } from 'react-query';
+import { Users, Writeups } from "../../services";
+import Modal from "./components/Modal"
+
+const Section = styled.section``;
+const TableSection = styled.section``;
+
+const TableContainer = styled.div`
+    width: calc(100% - 17.5vw);
+    height: auto;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+`;
+
+const TagContainer = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    max-width: 200px;
+    overflow-Y: auto;
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+`;
+const Id = styled.p`
+    font-weight: 700;
+`;
+const Slug = styled.p`
+    cursor: pointer;
+    font-weight: 700;
+    color: #001196;
+    text-decoration: none;
+    transition: all 0.4s ease;
+
+    :hover {
+        color: #000A59;
+    }
+`;
+const Tag = styled.div`
+    height: auto;
+    width: auto;
+    padding: 0.4rem 0.8rem;
+    margin: 0 0.4rem;
+    border: 1.5px solid #D5A76B;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #D5A76B;
+`;
+
+const sortOptions = [
+    { value: "writeup.date_submitted", label: "Date Submitted"},
+    { value: "academic_information.school", label: "School"},
+    { value: "username", label: "ID Number"},
+    { value: "last_name", label: "Name"},
+    { value: "academic_information.primary_course_string", label: "Year & Course"},
+    { value: "writeup.status", label: "Status"}
+]
+
+const IDs = ({ value }) => {
+    return (
+        <TagContainer>
+            <Id>{value}</Id>
+        </TagContainer>
+    )
+}
+
+const Links = ({ value }) => {
+    return (
+        <TagContainer>
+            <Slug to={`/writeups/${value}`}>{value}</Slug>
+        </TagContainer>
+    )
+}
+
+const Course = ({ value }) => {
+    return (
+        <TagContainer>
+            <p>{value.year_level} {value.primary_course}</p>
+        </TagContainer>
+    )
+}
+
+const Date = ({ value }) => {
+    return (
+        <TagContainer>
+            <p>{format(parseISO(value), "MMMM dd, yyyy")}</p>
+        </TagContainer>
+    )
+}
+
+const Status = ({ value }) => {
+    if (value.toLowerCase() == 'pending') {
+        return (
+            <TagContainer>
+                <TableStatus type="default" text={value} />
+            </TagContainer>
+        )
+    } else if (value.toLowerCase() == 'approved') {
+        return (
+            <TagContainer>
+                <TableStatus type="success" text={value} />
+            </TagContainer>
+        )
+    } else if (value.toLowerCase() == 'rejected') {
+        return (
+            <TagContainer>
+                <TableStatus type="failure" text={value} />
+            </TagContainer>
+        )
+    } else if (value.toLowerCase() == 'empty') {
+        return (
+            <TagContainer>
+                <TableStatus type="failure" text={value} />
+            </TagContainer>
+        )
+    } else if (value.toLowerCase() == 'draft') {
+        return (
+            <TagContainer>
+                <TableStatus type="failure" text={value} />
+            </TagContainer>
+        )
+    }
+}
+
+function isNumeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+  }
+
+function WriteupSubmissions() {
+    const { data: writeups } = useQuery('writeups', {queryFn: Users.index})
+    const data = writeups && writeups.filter((user) => user.writeup != null)
+    
+    // Search Bar
+    const [searchData, setSearchData] = useState(null);
+
+    const handleFilterChange = e => {
+        const value = e.target.value;
+
+        if (isNumeric(value)){
+            const filteredData = data.filter(name => (
+                name.username.includes(value)
+            ))
+            setSearchData(filteredData)
+        } else if (isNumeric(value)===false) {
+            const filteredData = data.filter(name => (
+                name.full_name.toLowerCase().includes(value.toLowerCase())
+            ))
+            setSearchData(filteredData)
+    }
+    };
+    
+    // Sort
+    const handleSortChange = e => {
+        const value = e.value;
+
+        if (searchData) {
+            const sorted = [...searchData].sort((a, b) => {
+                if (value == "writeup.date_submitted"){
+                    if (a.writeup.date_submitted < b.writeup.date_submitted) {
+                        return -1;
+                    }
+                    if (a.writeup.date_submitted > b.writeup.date_submitted) {
+                        return 1;
+                    }
+                    return 0;
+                } else if (value == "academic_information.school"){
+                    if (a.academic_information.school < b.academic_information.school) {
+                        return -1;
+                    }
+                    if (a.academic_information.school > b.academic_information.school) {
+                        return 1;
+                    }
+                    return 0;
+                } else if (value == "academic_information.primary_course_string"){
+                    if (a.academic_information.primary_course_string < b.academic_information.primary_course_string) {
+                        return -1;
+                    }
+                    if (a.academic_information.primary_course_string > b.academic_information.primary_course_string) {
+                        return 1;
+                    }
+                    return 0;
+                } else if (value == "writeup.status"){
+                    if (a.writeup.status < b.writeup.status) {
+                        return -1;
+                    }
+                    if (a.writeup.status > b.writeup.status) {
+                        return 1;
+                    }
+                    return 0;
+                } else {
+                    if (a[value] < b[value]) {
+                        return -1;
+                    }
+                    if (a[value] > b[value]) {
+                        return 1;
+                    }
+                    return 0;
+                }
+            })
+            setSearchData(sorted) 
+        } else if (data) {
+            const sorted = [...data].sort((a, b) => {
+                if (value == "writeup.date_submitted"){
+                    if (a.writeup.date_submitted < b.writeup.date_submitted) {
+                        return -1;
+                    }
+                    if (a.writeup.date_submitted > b.writeup.date_submitted) {
+                        return 1;
+                    }
+                    return 0;
+                } else if (value == "academic_information.school"){
+                    if (a.academic_information.school < b.academic_information.school) {
+                        return -1;
+                    }
+                    if (a.academic_information.school > b.academic_information.school) {
+                        return 1;
+                    }
+                    return 0;
+                } else if (value == "academic_information.primary_course_string"){
+                    if (a.academic_information.primary_course_string < b.academic_information.primary_course_string) {
+                        return -1;
+                    }
+                    if (a.academic_information.primary_course_string > b.academic_information.primary_course_string) {
+                        return 1;
+                    }
+                    return 0;
+                } else if (value == "writeup.status"){
+                    if (a.writeup.status < b.writeup.status) {
+                        return -1;
+                    }
+                    if (a.writeup.status > b.writeup.status) {
+                        return 1;
+                    }
+                    return 0;
+                } else {
+                    if (a[value] < b[value]) {
+                        return -1;
+                    }
+                    if (a[value] > b[value]) {
+                        return 1;
+                    }
+                    return 0;
+                }
+            })
+            setSearchData(sorted)
+        }
+    };
+
+    const [modalActive, setModalActive] = useState(false);
+    const [selectedWriteup, setSelectedWriteup] = useState(null);
+    const selectWriteupHandler = (id) => {
+        setSelectedWriteup(data && data.filter((user) => user.id == id));
+        setModalActive(!modalActive);
+    }
+
+    const ExportButtonHandler = () => {
+        useQuery('writeups', {queryFn: Writeups.exportAllWriteups})
+    }
+
+    const tableColumns = useMemo(
+        () => [
+            {
+                Header: "Date Submitted",
+                accessor: "writeup.date_submitted", // accessor is the "key" in the data
+                Cell: ({ cell: { value } }) => <Date value={value} />
+            },
+            {
+                Header: "School",
+                accessor: "academic_information.school", 
+            },
+            {
+                Header: "ID Number",
+                accessor: "username",
+                Cell: ({ cell: { value } }) => <IDs value={value} />
+            },
+            {
+                Header: "Name",
+                accessor: "id",
+                Cell: row => {
+                    return (
+                        <div>
+                            <Slug onClick={() => selectWriteupHandler(row.row.original.id)}>{row.row.original.full_name}</Slug>
+                        </div>
+                    )
+                }
+            },
+            {
+                Header: "Year & Course",
+                accessor: "academic_information",
+                Cell: ({ cell: { value } }) => <Course value={value} />
+            },
+            {
+                Header: "Status",
+                accessor: "writeup.status",
+                Cell: ({cell : { value } }) => <Status value={value} />
+            },
+        ],
+        []
+    );
+
+    const [columns, setColumns] = useState(tableColumns);
+
+    // Using useEffect to call the API once mounted and set the data
+    // useEffect(() => {
+    //     (async () => {
+    //     const result = await axios("url");
+    //     setData(result.data);
+    //     })();
+    // }, []);
+
+    return (
+        <>
+            <Section>
+                <Header dashboard={false} pageLabel="Writeup Submissions" />
+                <Filter handleSortChange={handleSortChange} sortOptions={sortOptions} onChange={handleFilterChange} exportButton={() => ExportButtonHandler}></Filter>
+            </Section>
+            <TableSection>
+                <TableContainer>
+                    {
+                        data && data
+                        ?
+                        <>
+                            <Table columns={columns} data={
+                                searchData
+                                ?
+                                searchData
+                                :
+                                data
+                            } />
+                        </>
+                        :
+                        <>
+                            <Spinner/>
+                        </>
+                    }
+                </TableContainer>
+            </TableSection>
+            { modalActive ? <Modal users={writeups} selectedWriteup={selectedWriteup} onExit={() => setModalActive(false)} /> : <></> }
+        </>
+    )
+}
+
+export default WriteupSubmissions;

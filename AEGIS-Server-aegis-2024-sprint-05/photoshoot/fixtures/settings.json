@@ -1,0 +1,11 @@
+[
+    {
+        "model": "photoshoot.photoshootperiodsettings", 
+        "pk": 1, 
+        "fields": {
+            "total_slots": 480, 
+            "slots_per_hour": 12, 
+            "slots_per_day": 96
+        }
+    }
+]
